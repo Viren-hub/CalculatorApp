@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Calculator</title>
+</head>
+
+<body>
+    <div class="calculator">
+        <h5>CALC</h5>
+        <div class="display" id="display">0</div>
+        <div class="buttons" onclick="handleButtonClick(event)">
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button onclick="deleteLastCharacter()" class="gray">DEL</button>
+
+
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>+</button>
+
+
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+
+            <button>.</button>
+            <button>0</button>
+            <button>/</button>
+            <button>*</button>
+
+        </div>
+        <div class="resetEquel">
+            <button onclick="resetDisplay()" class="gray">RESET</button>
+            <button onclick="calculate()" class="red">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
